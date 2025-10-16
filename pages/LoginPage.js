@@ -7,6 +7,7 @@ const { expect } = require('@playwright/test');
 exports.LoginPage = class LoginPage {
 
     constructor(page)
+
     {
         this.page=page;
         this.loginLink ='id=login2';
@@ -17,11 +18,14 @@ exports.LoginPage = class LoginPage {
 
 
     async goToLoginPage ()
+
     {
         await this.page.goto('https://www.demoblaze.com/')
     }
 
+
     async login(username, password)
+    
     {
         await this.page.locator(this.loginLink).click();
         await this.page.locator(this.usernameInput).fill(username);
