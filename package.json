@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "tests": "npx playwright test",
-  "job": "npx playwright test --headed --grep @job",
-  "debug": "npx playwright test --debug --grep @job",
-  "test": "npx playwright test --grep @job",
-  "login": "npx playwright test --grep @login",
-  "sso": "npx playwright test --grep @sso"
+    "tests": "npx playwright test",
+    "job": "npx playwright test --headed --grep @job",
+    "debug": "npx playwright test --debug --grep @job",
+    "test": "npx playwright test --grep @job",
+    "login": "npx playwright test --grep @login",
+    "sso": "npx playwright test --grep @sso"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.45.3",
+    "@playwright/test": "^1.56.0",
     "@types/node": "^22.1.0"
   },
   "dependencies": {
